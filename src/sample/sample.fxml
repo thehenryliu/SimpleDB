@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.32160804020100503" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="175.0" prefWidth="598.0">
+         <children>
+            <TextField fx:id="queryTextField" layoutX="26.0" layoutY="22.0" prefHeight="81.0" prefWidth="438.0" />
+            <Button fx:id="querySubmitButton" layoutX="494.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#submitQuery" text="Send Query" visible="false" />
+            <Button fx:id="connectToDatabaseButton" layoutX="486.0" layoutY="50.0" mnemonicParsing="false" onAction="#connectToDB" text="Connect to DB" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TableView fx:id="tableView" editable="true" layoutX="212.0" layoutY="14.0" prefHeight="267.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+                  <TableColumn prefWidth="75.0" text="C3" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
